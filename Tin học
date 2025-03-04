@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Đăng Ký</h2>
+        <form action="#" method="post">
+            <label for="fullname">Họ Tên (*)</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="username">Tên Đăng Nhập (*)</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Mật Khẩu (*)</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm_password">Xác nhận mật khẩu (*)</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
+            <label>Giới Tính:</label>
+            <div class="gender">
+                <input type="radio" id="male" name="gender" value="Nam">
+                <label for="male">Nam</label>
+                <input type="radio" id="female" name="gender" value="Nữ">
+                <label for="female">Nữ</label>
+            </div>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="address">Địa Chỉ:</label>
+            <textarea id="address" name="address" rows="3"></textarea>
+
+            <div class="terms">
+                <button type="button">Đọc điều khoản</button>
+                <input type="checkbox" id="agree" name="agree">
+                <label for="agree">Tôi chấp nhận điều khoản.</label>
+            </div>
+
+            <button type="submit">Đăng Ký</button>
+        </form>
+    </div>
+</body>
+</html>
